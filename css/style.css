@@ -13,7 +13,7 @@
 body {
     font-family: 'Courier New', monospace;
     background-color: #e0ffff;
-    color: #000000;
+    color: #000;
     padding: 20px;
 }
 
@@ -29,7 +29,7 @@ header {
     text-align: center;
     margin-bottom: 25px;
     padding-bottom: 15px;
-    border-bottom: 1px solid #cccccc;
+    border-bottom: 1px solid #ccc;
 }
 
 h1 {
@@ -39,7 +39,7 @@ h1 {
 
 .subtitle {
     font-size: 14px;
-    color: #666666;
+    color: #666;
 }
 
 .gallery {
@@ -59,10 +59,38 @@ h1 {
     display: block;
 }
 
+.description {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 12px;
+    margin: 25px 0;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.7;
+    border-left: 5px solid #4ecdc4;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-family: 'Courier New', Arial, sans-serif;
+}
+
+.description p {
+    margin: 0;
+    text-indent: 1.5em;
+}
+
 footer {
     text-align: center;
     padding-top: 15px;
-    border-top: 1px solid #cccccc;
+    border-top: 1px solid #ccc;
     font-size: 12px;
-    color: #888888;
+    color: #888;
+}
+
+@media (max-width: 390px) {
+    .description {
+        padding: 20px;
+        font-size: 15px;
+        line-height: 1.6;
+        margin: 20px 0;
+    }
 }
